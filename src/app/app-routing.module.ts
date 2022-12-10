@@ -8,9 +8,9 @@ const routes: Routes = [
     component: HomeComponent,
   },
   {
-    path: '**',
-    redirectTo: '',
-    pathMatch: 'full',
+    path: 'products',
+    loadChildren: () =>
+      import('./products/products.module').then((m) => m.ProductsModule),
   },
 ];
 

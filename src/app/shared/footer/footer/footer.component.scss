@@ -7,6 +7,9 @@
 }
 .logo {
   width: 33%;
+  &:hover {
+    cursor: pointer;
+  }
 }
 .c-logo {
   padding-left: 2.5rem;
